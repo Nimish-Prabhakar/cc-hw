@@ -1,0 +1,45 @@
+.file-list-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-list {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: file-counter;
+}
+
+.file-item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.file-number {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #555;
+}
+
+.file-link {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}
+
+.file-list-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
