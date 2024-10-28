@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   const fetchFiles = async () => {
     try {
-      const response = await axios.get("http://3.140.210.119/api/files");
+      const response = await axios.get("http://3.140.210.119:5001/api/files");
       setFiles(response.data);
     } catch (error) {
       console.error("Error fetching files:", error);

@@ -22,7 +22,7 @@ const FileUpload = ({ fetchFiles }) => {
 
     setLoading(true);
     try {
-      await axios.post("http://3.140.210.119/api/files/upload", formData, {
+      await axios.post("http://3.140.210.119:5001/api/files/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

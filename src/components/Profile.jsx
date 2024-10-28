@@ -10,10 +10,13 @@ const Profile = ({ onLoginSuccess }) => {
   const handleLogin = async () => {
     setErrorMessage("");
     try {
-      const response = await axios.post("http://3.140.210.119/api/auth/login", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "http://3.140.210.119:5001/api/auth/login",
+        {
+          username,
+          password,
+        }
+      );
       alert("Login successful");
       onLoginSuccess(response.data.token);
     } catch (error) {
@@ -26,7 +29,7 @@ const Profile = ({ onLoginSuccess }) => {
     setErrorMessage("");
     try {
       const response = await axios.post(
-        "http://3.140.210.119/api/auth/register",
+        "http://3.140.210.119:5001/api/auth/register",
         {
           username,
           password,
